@@ -15,7 +15,7 @@ const MYSTERIOUS_MESSAGES = [
 
 function getRandomDate() {
   const minDate = new Date("2026-03-20")
-  const maxDate = new Date("2026-08-15")
+  const maxDate = new Date("2026-05-10")
   const randomTime = minDate.getTime() + Math.random() * (maxDate.getTime() - minDate.getTime())
   return new Date(randomTime)
 }
