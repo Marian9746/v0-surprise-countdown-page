@@ -1,14 +1,16 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { League_Spartan } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const leagueSpartan = League_Spartan({ 
+  subsets: ["latin"],
+  variable: "--font-league-spartan"
+});
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Cuenta Atrás Sorpresa',
+  description: 'La cuenta atrás para el fin de semana más especial',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -35,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sans antialiased">
+    <html lang="es">
+      <body className={`${leagueSpartan.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
