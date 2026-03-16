@@ -11,6 +11,7 @@ const MYSTERIOUS_MESSAGES = [
   "Ni nosotras sabemos cuál es la buena",
   "Confía en el proceso... o no",
   "La fecha real es un misterio",
+  "¿Quién necesita certezas de todos modos?",
 ]
 
 function getRandomDate() {
@@ -98,7 +99,7 @@ export function Countdown() {
           </p>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 tracking-tight text-balance">
-            El Gran Fin de Semana
+            La gran despedida de 2026
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-12 capitalize">
