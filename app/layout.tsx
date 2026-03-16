@@ -15,19 +15,18 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: '/the_last_rode_logo.png',
+        type: 'image/png',
+        sizes: '32x32',
       },
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+        url: '/the_last_rode_logo.png',
+        type: 'image/png',
+        sizes: '16x16',
+      }
     ],
-    apple: '/apple-icon.png',
+    apple: '/the_last_rode_logo.png',
+    shortcut: '/the_last_rode_logo.png',
   },
 }
 
