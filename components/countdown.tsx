@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 const REAL_DATE = new Date("2026-05-09T00:00:00")
 
@@ -98,7 +99,7 @@ export function Countdown() {
             Cuenta atrás
           </p>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 tracking-tight text-balance">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight text-balance" style={{ color: '#ff86b8' }}>
             La gran despedida de 2026
           </h1>
           
@@ -122,6 +123,16 @@ export function Countdown() {
           <p className="mt-12 text-sm text-muted-foreground/60">
             Refresca la página si te atreves...
           </p>
+          
+          <div className="mt-8 flex justify-center">
+            <Image
+              src="/the_last_rode_logo.png"
+              alt="The Last Rode Agency Logo"
+              width={150}
+              height={150}
+              className="opacity-80 hover:opacity-100 transition-opacity duration-300"
+            />
+          </div>
         </div>
       </main>
     </div>
